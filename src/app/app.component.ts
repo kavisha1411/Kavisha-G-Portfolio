@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
     if (storedTheme !== null) {
       this.isDarkMode = JSON.parse(storedTheme);
     } else {
-      this.isDarkMode = true;
+      this.isDarkMode = false;
     }
     document.documentElement.setAttribute('data-theme', this.isDarkMode ? 'dark' : 'light');
     this.activeLink = 'home';

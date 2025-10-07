@@ -78,13 +78,18 @@ a.inactive {
 }
 
 .imageSelfDefault {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     float: inline-end;
-}
+    margin-top: 51px;
+    }
 
 .extraPadding {
-    padding-top: 170px !important;
+    padding-top: 120px !important;
+}
+
+.row-home{
+   flex-direction: row-reverse;
 }
 
 .commonContainer {
@@ -173,8 +178,19 @@ a.inactive {
 .btn-secondary {
     margin-top: -10px;
     font-size: 12px;
-    margin-right: 8px;
     transition: transform 0.3s ease;
+}
+
+.btn-contact{
+    margin-right: 11px;
+}
+
+.btn-download{
+    margin-right: 4px;
+}
+
+.github-icon{
+    padding-left: 4px !important;
 }
 
 .btn:hover {
@@ -292,7 +308,16 @@ a.inactive {
     }
 
     .carouselContextheight {
-        height: 445px !important;
+        height: 310px !important;
+    }
+
+    .actionBtns{
+        display: ruby-text;
+    }
+
+    .imageSelfDefault{
+        margin-top: 0px;
+        margin-right: 11px;
     }
 }
 
@@ -322,5 +347,12 @@ a.inactive {
 }
 
 .carouselContextheight {
-    height: 235px;
+    height: 186px;
+}
+
+@media (min-width: 500px) {
+    .actionBtns{
+        display: table;
+        margin-left: 50px;
+    }
 }
