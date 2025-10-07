@@ -159,7 +159,72 @@
   <section #sections id="career" class="commonContainer" [@fadeInUp]>
     <div class="insideContainerWithoutAlignment">
       <div class="insideContainerIntro">My Experiences</div>
-      TODO: Add experiences
+      <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btnAccordion orangeFontColor accordion-button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Caliber Infosolutions Inc.
+                    </button>
+                </h5>
+            </div>
+    
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordion">
+                <div class="card-body">
+                    <div class="orangeFontColor">Data Science and ML Intern (Jun '25 - Aug '25)</div>
+                    <li class="paddingBetweenBulletPoints">Built a pharmaceutical instrument scheduling optimizer using MILP (PuLP/CBC) with expertise-based assignments, automating 100+ daily tasks over 15-day horizons under regulatory constraints.</li>
+                    <li class="paddingBetweenBulletPoints">Engineered a parallel processing pipeline for 10,000+ records with a multi-worker architecture, cutting processing time by 93% and demonstrating 3–5× solver performance via benchmarking.</li>
+                    <li class="paddingBetweenBulletPoints">Architected a hierarchical constraint validation engine with real-time conflict resolution and expertise-based prioritization, ensuring 100% regulatory compliance.</li>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btnAccordion collapsed orangeFontColor accordion-button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Eastern Enterprise
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <div class="orangeFontColor">Software Developer (Feb '22 - Dec '24)</div>
+                    <li class="paddingBetweenBulletPoints">Led a team of four to develop a customizable UI-driven architecture with built-in access checks for Microsoft APIs, enhancing security by 75% and automating multi-tenant processes.</li>
+                    <li class="paddingBetweenBulletPoints">Redesigned database schemas, reducing complex queries and boosting performance by 30%.</li>
+                    <li class="paddingBetweenBulletPoints">Added client-side pagination to grids, reducing data call size and improving front-end load times by 70%.</li>
+                    <li class="paddingBetweenBulletPoints">Implemented 30+ Angular UI screens for onboarding/offboarding, cutting enrollment time by 30% and increasing client turnover by 20%.</li>
+                    <li class="paddingBetweenBulletPoints">Built an observability data-grid platform with real-time monitoring for 5,000+ devices to improve data visibility.</li>
+                    <li class="paddingBetweenBulletPoints">Implemented server-side caching with MySQL Query Cache to improve response times and reduce redundant computations.</li>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btnAccordion collapsed orangeFontColor accordion-button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Eastern Enterprise
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <div class="orangeFontColor">Software Engineering Intern (Aug '21 - Jan '22)</div>
+                    <li class="paddingBetweenBulletPoints">Optimized backend for 3,000+ campsites with six-language translation and a renewable QR-code entry flow, improving booking and payment efficiency.</li>
+                    <li class="paddingBetweenBulletPoints">Proposed and integrated third-party login, reducing login time by 90% and streamlining access.</li>
+                    <li class="paddingBetweenBulletPoints">Architected a smart billing tool that dynamically calculates and applies discounts across multiple factors, improving booking conversions by 20%.</li>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     </div>
   </section>
   <section #sections id="project" class="commonContainer" [@fadeInUp]>
