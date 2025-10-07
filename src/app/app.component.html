@@ -165,7 +165,148 @@
   <section #sections id="project" class="commonContainer" [@fadeInUp]>
     <div class="insideContainerWithoutAlignment">
       <div class="insideContainerIntro">My GitHub Projects</div>
-      TODO: Add projects
+      <div
+        id="carouselExampleDark"
+        class="carousel slide"
+        [ngClass]="isDarkMode ? 'carousel-light' : 'carousel-dark'"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carouselContextheight">
+              <div class="carousel-caption d-block">
+                <h5>Pharma Instrument Scheduling Optimizer</h5>
+                <p>
+                  Built a MILP-based scheduler (PuLP/CBC) to auto-assign 100+
+                  daily lab tasks over 15-day horizons with regulatory
+                  constraints, plus a parallel pipeline for 10k+ records (93%
+                  faster) and 3-5x solver gains via benchmarking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carouselContextheight">
+              <div class="carousel-caption d-block">
+                <h5>Evolutionary CNN Architecture Search</h5>
+                <p>
+                  Gradient-free NAS on CIFAR-10 using DEAP with
+                  crossover/mutation/elitism and hybrid tournament/lexicase
+                  selection; discovered Pareto-optimal models and reached 73.82%
+                  accuracy with automated architecture discovery.
+                  <a
+                    class="carousalLearnMore"
+                    href="https://github.com/kavisha1411/Evolutionary-Optimizations"
+                    target="_blank"
+                    >Learn more.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carouselContextheight">
+              <div class="carousel-caption d-block">
+                <h5>Speech & Emotion Recognition</h5>
+                <p>
+                  CNN-LSTM with Librosa feature pipelines for real-time emotion
+                  detection across 10+ states; deployed at institutional scale
+                  (500+ students) to enable automated monitoring and
+                  early-intervention workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carouselContextheight">
+              <div class="carousel-caption d-block">
+                <h5>AI Poker Playing Agent</h5>
+                <p>
+                  Developed an intelligent poker-playing agent using
+                  reinforcement learning and probabilistic reasoning; designed
+                  to adapt strategies dynamically against opponents in simulated
+                  environments.
+                  <a
+                    class="carousalLearnMore"
+                    href="https://github.com/kavisha1411/AI-Poker-Playing-Agent"
+                    target="_blank"
+                    >Learn more.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carouselContextheight">
+              <div class="carousel-caption d-block">
+                <h5>Student Housing Tracker</h5>
+                <p>
+                  Built a full-stack platform to centralize on/off-campus
+                  housing info, enabling advanced search, filters, and alerts.
+                  Improves housing discovery and decision-making for students.
+                  <a
+                    class="carousalLearnMore"
+                    href="https://github.com/kavisha1411/Off-campus-Housing"
+                    target="_blank"
+                    >Learn more.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   </section>
   <section #sections id="skills" class="commonContainer" [@fadeInUp]>
@@ -273,9 +414,7 @@
             alt="Matplotlib"
           />Matplotlib
         </button>
-        <button class="btn btn-light skillsButton">
-          DEAP
-        </button>
+        <button class="btn btn-light skillsButton">DEAP</button>
         <button class="btn btn-light skillsButton">
           <img
             class="imgSkill"
@@ -341,24 +480,16 @@
         <button class="btn btn-light skillsButton">
           Evolutionary Algorithms
         </button>
-        <button class="btn btn-light skillsButton">
-          CNN/LSTM
-        </button>
+        <button class="btn btn-light skillsButton">CNN/LSTM</button>
         <button class="btn btn-light skillsButton">
           Multi-Objective Learning
         </button>
-        <button class="btn btn-light skillsButton">
-          Genetic Algorithms
-        </button>
-        <button class="btn btn-light skillsButton">
-          Audio Processing
-        </button>
+        <button class="btn btn-light skillsButton">Genetic Algorithms</button>
+        <button class="btn btn-light skillsButton">Audio Processing</button>
         <button class="btn btn-light skillsButton">
           <img class="imgSkill" src="assets/Automl.png" alt="AutoML" />AutoML
         </button>
-        <button class="btn btn-light skillsButton">
-          MILP
-        </button>
+        <button class="btn btn-light skillsButton">MILP</button>
       </div>
       <div class="skillAnimation">
         I am a &nbsp;<span id="typed-output"></span>
