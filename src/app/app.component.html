@@ -1,55 +1,109 @@
 <div class="displayNav">
-    <nav class="navItem"><a href='#home' (click)="setActiveLink('home')" class="nav-link"
-            [ngClass]="activeLink==='home'?'active':'inactive'">Home</a></nav>
-    <nav class="navItem"><a href='#about' (click)="setActiveLink('about')" class="nav-link"
-            [ngClass]="activeLink==='about'?'active':'inactive'">About</a></nav>
-    <nav class="navItem"><a href='#career' (click)="setActiveLink('career')"
-            [ngClass]="activeLink==='career'?'active':'inactive'" class="nav-link">Career</a></nav>
-    <nav class="navItem"><a href='#project' (click)="setActiveLink('project')"
-            [ngClass]="activeLink==='project'?'active':'inactive'" class="nav-link">Project</a>
-    </nav>
-    <nav class="navItem"><a href='#skills' (click)="setActiveLink('skills')"
-            [ngClass]="activeLink==='skills'?'active':'inactive'" class="nav-link">Skills</a></nav>
-    <nav class="navItem"><a href='#contact' (click)="setActiveLink('contact')"
-            [ngClass]="activeLink==='contact'?'active':'inactive'" class="nav-link">Contact</a>
-    </nav>
+  <nav class="navItem">
+    <a
+      href="#home"
+      (click)="setActiveLink('home')"
+      class="nav-link"
+      [ngClass]="activeLink === 'home' ? 'active' : 'inactive'"
+      >Home</a
+    >
+  </nav>
+  <nav class="navItem">
+    <a
+      href="#about"
+      (click)="setActiveLink('about')"
+      class="nav-link"
+      [ngClass]="activeLink === 'about' ? 'active' : 'inactive'"
+      >About</a
+    >
+  </nav>
+  <nav class="navItem">
+    <a
+      href="#career"
+      (click)="setActiveLink('career')"
+      [ngClass]="activeLink === 'career' ? 'active' : 'inactive'"
+      class="nav-link"
+      >Career</a
+    >
+  </nav>
+  <nav class="navItem">
+    <a
+      href="#project"
+      (click)="setActiveLink('project')"
+      [ngClass]="activeLink === 'project' ? 'active' : 'inactive'"
+      class="nav-link"
+      >Project</a
+    >
+  </nav>
+  <nav class="navItem">
+    <a
+      href="#skills"
+      (click)="setActiveLink('skills')"
+      [ngClass]="activeLink === 'skills' ? 'active' : 'inactive'"
+      class="nav-link"
+      >Skills</a
+    >
+  </nav>
+  <nav class="navItem">
+    <a
+      href="#contact"
+      (click)="setActiveLink('contact')"
+      [ngClass]="activeLink === 'contact' ? 'active' : 'inactive'"
+      class="nav-link"
+      >Contact</a
+    >
+  </nav>
 </div>
 <div class="sectionClass">
-    <section #sections id="home" class="commonContainer extraPadding" [@fadeInUp]>
-        <div class="insideContainer">
-            <div>
-                <img class="imageSelfDefault" src="assets/self.webp" alt="Avatar">
-            </div>
-            <div>
-                <p class="fontPrimary">Hi there 👋 I'm</p>
-                <p class="fontSecondary"><b>Kavisha Ghodasara</b></p>
-                <!-- <p class="fontPrimary">Thanks for dropping by! I'm a <b class="orangeFontColor">software
+  <section #sections id="home" class="commonContainer extraPadding" [@fadeInUp]>
+    <div class="insideContainer">
+      <div>
+        <img class="imageSelfDefault" src="assets/laptopp.webp" alt="Avatar" />
+      </div>
+      <div>
+        <p class="fontPrimary">Hi there 👋 I'm</p>
+        <p class="fontSecondary"><b>Kavisha Ghodasara</b></p>
+        <!-- <p class="fontPrimary">Thanks for dropping by! I'm a <b class="orangeFontColor">software
                         engineer</b>
                     crafting web applications
                     with a modern web development stack, always eager to optimize, experiment, and push the limits
                     of
                     code.</p> -->
-                    <p class="fontPrimary">Thanks for dropping by! I'm a <b class="orangeFontColor">Software Engineer and MSCS student</b> passionate about building scalable, intelligent systems and data-driven web applications. Skilled in Python, C++, React, and distributed systems, I love optimizing performance, automating workflows, and crafting elegant solutions that blend engineering precision with creativity.
-                </p>
-            </div>
-            <div>
-                <a href="#contact"><button class="btn btn-secondary">Contact me</button></a>
+        <p class="fontPrimary">
+          Thanks for dropping by! I'm a
+          <b class="orangeFontColor">Software Engineer and MSCS student</b>
+          passionate about building scalable, intelligent systems and
+          data-driven web applications. Skilled in Python, C++, React, and
+          distributed systems, I love optimizing performance, automating
+          workflows, and crafting elegant solutions that blend engineering
+          precision with creativity.
+        </p>
+      </div>
+      <div>
+        <a href="#contact"
+          ><button class="btn btn-secondary">Contact me</button></a
+        >
 
-                <a href="assets/Kavisha_Resume.pdf" download>
-                    <button class="btn btn-secondary">View my Resume &nbsp;<i class="bi bi-download"></i></button>
-                </a>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/kavishag2000/" target="_blank"><i
-                            class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/kavisha1411" target="_blank"><i class="bi bi-github"></i></a>
-                </div>
-            </div>
+        <a href="assets/Kavisha_Resume.pdf" download>
+          <button class="btn btn-secondary">
+            View my Resume &nbsp;<i class="bi bi-download"></i>
+          </button>
+        </a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kavishag2000/" target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://github.com/kavisha1411" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
-    </section>
-    <section #sections id="about" class="commonContainer" [@fadeInUp]>
-        <div class="insideContainer">
-            <div class="insideContainerIntro">This is me!</div>
-            <!-- I’m a software developer with 8 years of experience, currently working as a Lead Engineer in Pune.
+      </div>
+    </div>
+  </section>
+  <section #sections id="about" class="commonContainer" [@fadeInUp]>
+    <div class="insideContainer">
+      <div class="insideContainerIntro">This is me!</div>
+      <!-- I’m a software developer with 8 years of experience, currently working as a Lead Engineer in Pune.
             I primarily wrangle the frontend of applications and have worked across cybersecurity, e-commerce, and
             CSP
             domains. So far, I have worked on four projects across three different organizations.
@@ -78,116 +132,327 @@
             ever thought it was a good idea), riding my bike like I’m in an action movie, or losing sleep over video
             games. Oh, and I do pick up a book... once in a blue moon (mostly to prove I can still read). -->
 
-            I'm a software developer and data scientist who loves turning messy data and complex systems into something smart and usable. Right now, I'm pursuing my MS in Computer Science at UMass Amherst, diving deep into AI, ML, and system optimization. I've worked across pharma analytics, device management, and full-stack engineering — basically, anywhere I can make code do more with less.
-<br><br>
-I started my journey at Eastern Enterprise, where I built dashboards and automation tools for Microsoft Intune, Windows 365, and license management. Along the way, I learned how to tame APIs, design cleaner data models, and build UIs that don't make people cry.
-<br><br>
-Later, at Caliber Infosolutions, I switched gears to data science — building a pharma instrument scheduler using mixed-integer linear programming (PuLP/CBC) and parallel pipelines that crunched through 10,000+ records. I also worked on detecting bottlenecks in approval processes and making lab workflows actually efficient for once.
-<br><br>
-These days, when I'm not debugging or running yet another experiment, you'll find me reading ML papers, tinkering with side projects (usually some over-engineered AI idea), cooking, or biking around Amherst pretending it counts as cardio.
-        </div>
-    </section>
-    <section #sections id="career" class="commonContainer" [@fadeInUp]>
-        <div class="insideContainerWithoutAlignment">
-            <div class="insideContainerIntro">My Experiences</div>
-            TODO: Add experiences
-        </div>
-    </section>
-    <section #sections id="project" class="commonContainer" [@fadeInUp]>
-        <div class="insideContainerWithoutAlignment">
-            <div class="insideContainerIntro">My GitHub Projects</div>
-            TODO: Add projects
-        </div>
-    </section>
-    <section #sections id="skills" class="commonContainer" [@fadeInUp]>
-        <div class="insideContainer">
-            <div class="insideContainerIntro">Skills</div>
-            <div class="insideContainerAlignment">
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Angular.png"
-                        alt="Angular">Angular</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/React.png"
-                        alt="React">React</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/TypeScript.png"
-                        alt="TypeScript">TypeScript</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/JavaScript.png"
-                        alt="JavaScript">JavaScript</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Python.png"
-                        alt="Python">Python</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Node.js.png"
-                        alt="NodeJs">NodeJs</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Express.png"
-                        alt="ExpressJS">ExpressJS</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/HTML5.png"
-                        alt="HTML5">HTML5</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/CSS3.png"
-                        alt="CSS3">CSS3</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Tailwind CSS.png"
-                        alt="Tailwind">Tailwind</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Playwrite.png"
-                        alt="Playwrite">Playwrite</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Jasmine.png"
-                        alt="Jasmine">Jasmine</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Karma.png"
-                        alt="Karma">Karma</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Jenkins.png"
-                        alt="Jenkins">Jenkins</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/MySQL.png"
-                        alt="MySQL">MySQL</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/MongoDB.png"
-                        alt="MongoDB">MongoDB</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/Azure.png"
-                        alt="Azure">Azure</button>
-                <button class="btn btn-light skillsButton"><img class="imgSkill" src="assets/GitHub.png"
-                        alt="GitHub">GitHub</button>
-            </div>
-            <div class="skillAnimation">I am a &nbsp;<span id="typed-output"></span>
-            </div>
-        </div>
-    </section>
-    <section #sections id="contact" class="commonContainer" [@fadeInUp]>
-        <div class="insideContainer">
-            <div class="insideContainerIntro">Let's Connect</div>
-            <p>Feel free to reach out via <a class="contactMeEmail" href="mailto:kavisha.ghodasara14@gmail.com"
-                    target="_blank">email</a> or drop me a message, and I'll get back to you as soon as
-                possible.
-            </p>
-            <div class="contactFormFlexContainer">
-                <img src="assets/myPic.jpg" class="contactmeImage">
-                <form [formGroup]="contactForm" class="contactForm" (ngSubmit)="onSubmit()">
-                    <div class="form-group paddingForm">
-                        <input type="email" id="email" class="form-control" formControlName="email"
-                            placeholder="Your email"
-                            [ngClass]="{'invalid-field': contactForm.get('email')?.errors && contactForm.get('email')?.dirty}">
-                        <small *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.dirty"
-                            class="error">
-                            <p class="text-danger">Email is required.</p>
-                        </small>
-                        <small *ngIf="contactForm.get('email')?.errors?.['email']" class="error">
-                            <p class="text-danger">Enter a valid email.</p>
-                        </small>
-                    </div>
+      I'm a software developer and data scientist who loves turning messy data
+      and complex systems into something smart and usable. Right now, I'm
+      pursuing my MS in Computer Science at UMass Amherst, diving deep into AI,
+      ML, and system optimization. I've worked across pharma analytics, device
+      management, and full-stack engineering — basically, anywhere I can make
+      code do more with less.
+      <br /><br />
+      I started my journey at Eastern Enterprise, where I built dashboards and
+      automation tools for Microsoft Intune, Windows 365, and license
+      management. Along the way, I learned how to tame APIs, design cleaner data
+      models, and build UIs that don't make people cry.
+      <br /><br />
+      Later, at Caliber Infosolutions, I switched gears to data science —
+      building a pharma instrument scheduler using mixed-integer linear
+      programming (PuLP/CBC) and parallel pipelines that crunched through
+      10,000+ records. I also worked on detecting bottlenecks in approval
+      processes and making lab workflows actually efficient for once.
+      <br /><br />
+      These days, when I'm not debugging or running yet another experiment,
+      you'll find me reading ML papers, tinkering with side projects (usually
+      some over-engineered AI idea), cooking, or biking around Amherst
+      pretending it counts as cardio.
+    </div>
+  </section>
+  <section #sections id="career" class="commonContainer" [@fadeInUp]>
+    <div class="insideContainerWithoutAlignment">
+      <div class="insideContainerIntro">My Experiences</div>
+      TODO: Add experiences
+    </div>
+  </section>
+  <section #sections id="project" class="commonContainer" [@fadeInUp]>
+    <div class="insideContainerWithoutAlignment">
+      <div class="insideContainerIntro">My GitHub Projects</div>
+      TODO: Add projects
+    </div>
+  </section>
+  <section #sections id="skills" class="commonContainer" [@fadeInUp]>
+    <div class="insideContainer">
+      <div class="insideContainerIntro">Skills</div>
+      <div class="insideContainerAlignment">
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Python.png" alt="Python" />Python
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Java.png" alt="Java" />Java
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Cpp.png" alt="Cpp" />C++
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Angular.png" alt="Angular" />Angular
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/MySQL.png" alt="MySQL" />MySQL
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Powershell.png"
+            alt="PowerShell"
+          />PowerShell
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/React.png" alt="React" />React
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/TypeScript.png"
+            alt="TypeScript"
+          />TypeScript
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/JavaScript.png"
+            alt="JavaScript"
+          />JavaScript
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Node.js.png" alt="NodeJs" />NodeJs
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/PostgreSQL.png"
+            alt="PostgreSQL"
+          />PostgreSQL
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/HTML5.png" alt="HTML5" />HTML5
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/CSS3.png" alt="CSS3" />CSS3
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Tailwind CSS.png"
+            alt="Tailwind"
+          />Tailwind
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Playwrite.png"
+            alt="Playwright"
+          />Playwright
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Jasmine.png" alt="Jasmine" />Jasmine
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Karma.png" alt="Karma" />Karma
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/GraphQL.png" alt="GraphQL" />GraphQL
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Pytorch.png" alt="PyTorch" />PyTorch
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Tensorflow.png"
+            alt="TensorFlow"
+          />TensorFlow
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Pandas.png" alt="Pandas" />Pandas
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Plotly.png" alt="Plotly" />Plotly
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Matplotlib.png"
+            alt="Matplotlib"
+          />Matplotlib
+        </button>
+        <button class="btn btn-light skillsButton">
+          DEAP
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Scikitlearn.png"
+            alt="Scikit-learn"
+          />Scikit-learn
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Librosa.png" alt="Librosa" />Librosa
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Jenkins.png" alt="Jenkins" />Jenkins
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Docker.png" alt="Docker" />Docker
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Confluence.png"
+            alt="Confluence"
+          />Confluence
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Devtools.jpeg"
+            alt="DevTools"
+          />DevTools
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Intellij.png"
+            alt="IntelliJ"
+          />IntelliJ
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Devops.jpg" alt="DevOps" />DevOps
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Cicd.png" alt="CICD" />CI/CD
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Excel.png" alt="Excel" />Excel
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/MongoDB.png" alt="MongoDB" />MongoDB
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Azure.png" alt="Azure" />Azure
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/GitHub.png" alt="GitHub" />GitHub
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img
+            class="imgSkill"
+            src="assets/Nas.png"
+            alt="Neural Architecture Search"
+          />Neural Architecture Search
+        </button>
+        <button class="btn btn-light skillsButton">
+          Evolutionary Algorithms
+        </button>
+        <button class="btn btn-light skillsButton">
+          CNN/LSTM
+        </button>
+        <button class="btn btn-light skillsButton">
+          Multi-Objective Learning
+        </button>
+        <button class="btn btn-light skillsButton">
+          Genetic Algorithms
+        </button>
+        <button class="btn btn-light skillsButton">
+          Audio Processing
+        </button>
+        <button class="btn btn-light skillsButton">
+          <img class="imgSkill" src="assets/Automl.png" alt="AutoML" />AutoML
+        </button>
+        <button class="btn btn-light skillsButton">
+          MILP
+        </button>
+      </div>
+      <div class="skillAnimation">
+        I am a &nbsp;<span id="typed-output"></span>
+      </div>
+    </div>
+  </section>
+  <section #sections id="contact" class="commonContainer" [@fadeInUp]>
+    <div class="insideContainer">
+      <div class="insideContainerIntro">Let's Connect</div>
+      <p>
+        Feel free to reach out via
+        <a
+          class="contactMeEmail"
+          href="mailto:kavisha.ghodasara14@gmail.com"
+          target="_blank"
+          >email</a
+        >
+        or drop me a message, and I'll get back to you as soon as possible.
+      </p>
+      <div class="contactFormFlexContainer">
+        <img src="assets/myPic.jpg" class="contactmeImage" />
+        <form
+          [formGroup]="contactForm"
+          class="contactForm"
+          (ngSubmit)="onSubmit()"
+        >
+          <div class="form-group paddingForm">
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              formControlName="email"
+              placeholder="Your email"
+              [ngClass]="{
+                'invalid-field':
+                  contactForm.get('email')?.errors &&
+                  contactForm.get('email')?.dirty
+              }"
+            />
+            <small
+              *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.dirty"
+              class="error"
+            >
+              <p class="text-danger">Email is required.</p>
+            </small>
+            <small
+              *ngIf="contactForm.get('email')?.errors?.['email']"
+              class="error"
+            >
+              <p class="text-danger">Enter a valid email.</p>
+            </small>
+          </div>
 
-                    <div class="form-group paddingForm">
-                        <textarea id="message" class="form-control" formControlName="message" rows="4"
-                            placeholder="Your message..."
-                            [ngClass]="{'invalid-field': contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.dirty}"></textarea>
-                        <small *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.dirty"
-                            class="error">
-                            <p class="text-danger">Message is required.</p>
-                        </small>
-                    </div>
-                    <button *ngIf="!isLoading" class="btn btn-secondary sendMessage">Send Message &nbsp;<i
-                            class="bi bi-envelope"></i></button>
-                    <button *ngIf="isLoading" class="btn btn-secondary sendMessage">
-                        <div class="spinner-border text-light" style="font-size: 10px;height: 15px;width: 15px;"
-                            role="status">
-                        </div>&nbsp;&nbsp;<span>Loading...</span>
-                    </button>
-                </form>
-            </div>
-            <div class="copyright"><small>© 2025 Kavisha. All rights reserved.</small></div>
-        </div>
-    </section>
-    <div *ngIf="isDarkMode" (click)="toggleTheme()"><i class="bi bi-brightness-high fixed-icon"></i></div>
-    <div *ngIf="!isDarkMode" (click)="toggleTheme()"><i class="bi bi-moon fixed-icon"></i></div>
+          <div class="form-group paddingForm">
+            <textarea
+              id="message"
+              class="form-control"
+              formControlName="message"
+              rows="4"
+              placeholder="Your message..."
+              [ngClass]="{'invalid-field': contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.dirty}"
+            ></textarea>
+            <small
+              *ngIf="
+                contactForm.get('message')?.invalid &&
+                contactForm.get('message')?.dirty
+              "
+              class="error"
+            >
+              <p class="text-danger">Message is required.</p>
+            </small>
+          </div>
+          <button *ngIf="!isLoading" class="btn btn-secondary sendMessage">
+            Send Message &nbsp;<i class="bi bi-envelope"></i>
+          </button>
+          <button *ngIf="isLoading" class="btn btn-secondary sendMessage">
+            <div
+              class="spinner-border text-light"
+              style="font-size: 10px; height: 15px; width: 15px"
+              role="status"
+            ></div>
+            &nbsp;&nbsp;<span>Loading...</span>
+          </button>
+        </form>
+      </div>
+      <div class="copyright">
+        <small>© 2025 Kavisha G. All rights reserved.</small>
+      </div>
+    </div>
+  </section>
+  <div *ngIf="isDarkMode" (click)="toggleTheme()">
+    <i class="bi bi-brightness-high fixed-icon"></i>
+  </div>
+  <div *ngIf="!isDarkMode" (click)="toggleTheme()">
+    <i class="bi bi-moon fixed-icon"></i>
+  </div>
 </div>

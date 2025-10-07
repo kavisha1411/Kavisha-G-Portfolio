@@ -42,7 +42,17 @@ export class AppComponent implements OnInit {
     document.documentElement.setAttribute('data-theme', this.isDarkMode ? 'dark' : 'light');
     this.activeLink = 'home';
     const options = {
-      strings: ["Software Developer", "Frontend Developer", "JavaScript Developer", "MEAN Stack Developer", "MERN Stack Developer", "Playwright Developer"],
+      strings: ["Graduate CompSci Student",
+        "Fullstack Developer",
+        "JavaScript & TypeScript Developer",
+        "MEAN Stack Developer",
+        "Frontend Developer",
+        "Python Developer",
+        "Machine Learning & Data Science Enthusiast",
+        "Distributed Systems Engineer",
+        "Database Optimization Specialist",
+        "AI/ML Researcher",
+        "Cloud & DevOps Engineer"],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 500,
